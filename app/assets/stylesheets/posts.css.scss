@@ -1,6 +1,7 @@
 
 /* TODO: pull out coloring into variables */
-$linkhover: red;
+$linkhover: #2f2f2f;
+$maincolor: #2f2f2f;
 
 div:before, div:after {content:''; display:table;}
 
@@ -41,26 +42,37 @@ p {
 a,
 a:visited
 a:active {
-  color: #000;
+  color: #2f2f2f;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
 }
 
 a:hover,
 #admin #published h3 a:hover {
-  color: $linkhover;
+  color: $maincolor;
 }
 
 header {
   width: 162px;
-  border-right: 1px solid #DDD;
+  border-right: 1px solid #2f2f2f;
   position: fixed;
   top: 0;
   bottom: 0;
   padding: 20px 40px;
+  background-color: $maincolor;
+  a {
+    padding: 2px 0;
+    color: #fff;
+    border-bottom: 0;
+    text-decoration: none;
 
+    &:hover {
+      border-color: #777;
+      color: #ccc;
+      }
+  }
   span {
-    color: #888;
+    color: #fff;
     font-weight: 500;
 
     &.powered-by {
@@ -80,12 +92,12 @@ header {
 
     a {
       padding: 2px 0;
-      color: #888;
+      color: #fff;
       border-bottom: 2px solid #eee;
 
       &:hover {
         border-color: #777;
-        color: #444;
+        color: #ccc;
       }
     }
   }
@@ -101,7 +113,7 @@ header {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 12px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 5px solid #2f2f2f;
   }
 }
 
@@ -130,15 +142,15 @@ header {
 }
 
 code {
-	font-size: 13px;
-	background: #F2F2F2;
-	padding: 20px;
-	margin: 20px;
-	display: block;
+  font-size: 13px;
+  background: #F2F2F2;
+  padding: 20px;
+  margin: 20px;
+  display: block;
 }
 
 .contain {
-  width: 600px;
+  width: 960px;
   position: relative;
 }
 
@@ -159,7 +171,7 @@ code {
 
   .contain {
     margin: 0 auto;
-    width: 600px;
+    width: 960px;
   }
 
   input[type=text] {
@@ -517,7 +529,7 @@ form .permalink {
   #post-editor {
     margin-left: -25%;
     left: 50%;
-    width: 600px;
+    width: 50%;
   }
 }
 

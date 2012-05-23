@@ -16,10 +16,13 @@
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
       <% if CONFIG['twitter'] %>
-        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
+        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'], :target => "_blank" %></li>
       <% end %>
       <% if CONFIG['github'] %>
-        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
+        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'], :target => "_blank" %></li>
+      <% end %>
+      <% if CONFIG['linkedin'] %>
+        <li><%= link_to 'linkedin', 'http://www.linkedin.com/in/' + CONFIG['linkedin'], :target => "_blank" %></li>
       <% end %>
       <% if CONFIG['email'] %>
         <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
