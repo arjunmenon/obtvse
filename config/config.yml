@@ -1,10 +1,11 @@
 ---
-title:               CoderOnCode
-tagline:             Develop for Life
+title:               Coder On Code
+tagline:             "Node.js, Ruby, Magento"
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
-name:                Allan MacGregor
-twitter:             coderoncode
+name:                Your name
+twitter:             amacgregor
 github:              amacgregor
-email:               allan@coderoncode.com
+linkedin:			 allanmacgregor
+email:               info@coderoncode.com
 google_analytics_id: YOUR_GA_ID
