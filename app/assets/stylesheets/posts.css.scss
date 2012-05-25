@@ -2,6 +2,8 @@
 /* TODO: pull out coloring into variables */
 $linkhover: #2f2f2f;
 $maincolor: #2f2f2f;
+* { outline: 0 none;}
+
 
 div:before, div:after {content:''; display:table;}
 
@@ -45,6 +47,7 @@ a:active {
   color: #2f2f2f;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
+
 }
 
 a:hover,
