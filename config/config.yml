@@ -1,10 +1,10 @@
 ---
 title:               CoderOnCode
-tagline:             Develop for Life.
+tagline:             Develop for Life
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Allan MacGregor
 twitter:             coderoncode
 github:              amacgregor
-email:               address@example.com
+email:               allan@coderoncode.com
 google_analytics_id: YOUR_GA_ID
