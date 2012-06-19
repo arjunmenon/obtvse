@@ -33,7 +33,7 @@
       <div class="left">
         <a href="/admin">&laquo; Admin</a>
         <%= link_to 'Delete', @post, :confirm => 'Are you sure?', :method => :delete, :class => 'delete-bar' %>
-        <%= link_to 'Options', '#options', :class => 'menu' %>
+        <%= link_to 'Options', '#options', :id => 'options-menu', :class => 'menu' %>
         <ul id="options" class="sub-menu">
           <li>
             <%= f.label :url, 'Slug' %>
