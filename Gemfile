@@ -47,3 +47,7 @@ group :assets do
   gem 'coffee-rails', '~> 3'
   gem 'uglifier', '~> 1'
 end
+
+
+
+gem 'acts_as_commentable_with_threading'

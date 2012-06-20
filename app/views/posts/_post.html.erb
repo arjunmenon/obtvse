@@ -20,3 +20,12 @@
 
   <% if @single_post %><a class="button space-top" href="<%= root_url %>">Back to Blog</a><% end %>
 </section>
+<section id="post-<%= post.id %>-comments">
+  <%- @comments.each do |comment| -%>
+    <div id="comment-<%= comment.id %>">
+      <h3><%= comment.title %></h3>
+      <p><%= comment.body %></p>
+    </div>
+  <%- end -%>
+
+</section>
