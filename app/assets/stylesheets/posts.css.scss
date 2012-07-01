@@ -122,7 +122,7 @@ header {
 
 #content {
   section {
-    padding: 26px 0 40px 50px;
+    padding: 26px 40px 50px;
     border-bottom: 1px solid #ddd;
     position: relative;
   }
@@ -142,6 +142,7 @@ header {
 
 .show #content section {
   border-bottom: none;
+  max-width: 960px;
 }
 
 code {
@@ -153,7 +154,7 @@ code {
 }
 
 .contain {
-  width: 960px;
+  max-width: 960px;
   position: relative;
 }
 
@@ -275,6 +276,7 @@ label {
   font-weight: bold;
   margin: 0 8px 0 0;
 }
+
 
 #post_draft {
   position: relative;
@@ -571,6 +573,47 @@ form .permalink {
   font-weight: 900;
   text-transform: uppercase;
 }
+.post-comments {
+  p { margin: 0 0 0 0; }
+  form { margin-bottom: 15px;}
+  .meta { font-size:12px; line-height:12px; margin: 0 0 0 0;}
+  .comment {border:1px solid #E6E6E6; border-radius: 5px; moz-border-radius:5px; padding: 10px; margin-bottom: 5px;}
+  .parent-comment {}
+  .child-comment { 
+    background:#eee; margin-left:10px;
+    .child-comment {
+      background:#fcfcfc;
+    } 
+  }
+}
+
+.post-comments label { color:#2c2c2c;}
+
+.post-comments textarea { 
+  border:1px solid #ddd;
+  max-width:960px;
+  height:120px;
+  width:700px;
+  background: #fff;
+}
+
+.post-comments .reply-submit {
+    background: none repeat scroll 0 0 #000000;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-top: 5px;
+}
+
+.comment .reply .form { 
+  display:none; 
+  margin-bottom: 15px;
+}
+
+
 
 nav.pagination {
   text-align: right;

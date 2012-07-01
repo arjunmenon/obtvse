@@ -20,12 +20,8 @@
 
   <% if @single_post %><a class="button space-top" href="<%= root_url %>">Back to Blog</a><% end %>
 </section>
-<section id="post-<%= post.id %>-comments">
-  <%- @comments.each do |comment| -%>
-    <div id="comment-<%= comment.id %>">
-      <h3><%= comment.title %></h3>
-      <p><%= comment.body %></p>
-    </div>
-  <%- end -%>
+<section class="post-comments" id="post-<%= post.id %>-comments">
+    <%= render :partial => 'comment_form', :locals => { :post => post }%>
 
+    <%= render :partial => 'comment', :locals => { :comments => @comments, :post => post }%>
 </section>

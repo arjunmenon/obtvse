@@ -1,0 +1,17 @@
+  <%- comments.each do |comment| -%>
+    <%- if !comment.parent_id  %>
+      <div id="comment-<%= comment.id %>" class="comment parent-comment">
+    <%- else %>
+      <div id="comment-<%= comment.id %>" class="comment child-comment">
+    <% end %>
+      <p class="meta">Posted by <strong>Anonymous</strong> <%= time_ago_in_words(comment.created_at) %> ago</p>
+      <p><%= comment.body %></p>
+      <div class="reply">
+        <a class="reply-btn"><strong>Reply</strong></a>
+        <div class="form"><%= render :partial => 'comment_form', :locals => { :comment => comment, :post => @post }%></div>
+      </div> 
+      <%- if comment.has_children? -%>
+      	<%= render :partial => 'comment', :locals => { :comments => comment.children }%>
+      <%- end -%>
+    </div>
+  <%- end -%>
