@@ -12,6 +12,7 @@
 <body class="<%= controller_name %> <%= action_name %>">
   <% unless @no_header %>
   <header>
+
     <h1><%= link_to CONFIG['title'], root_url %></h1>
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
@@ -38,13 +39,6 @@
   <% end %>
 
   <div id="container">
-    <% if current_user %>
-      Signed in as <%= current_user.name %>!
-      <%= link_to "Sign out", '/auth/signout' %>
-    <% else %>
-      <%= link_to "Sign in with Github", "/auth/twitter" %>
-    <% end %>
-
     <% unless @no_header %>
       <time><% if @post && @post.created_at %>Posted <%= @post.created_at.to_formatted_s(:day_month_year) %><% else %><%= Time.now.to_formatted_s(:day_month_year) %><% end %></time>
     <% end %>
