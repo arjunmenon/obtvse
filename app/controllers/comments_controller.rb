@@ -1,12 +1,10 @@
 class CommentsController < ApplicationController
   helper_method :current_user
 
-  
+
  def create
   @post = Post.find(params[:comment][:commentable_id])
-  @user_who_commented = current_user
-  @user_who_commented ||= 0
-  @comment = Comment.build_from(@post, @user_who_commented, params[:comment][:body])
+  @comment = Comment.build_from(@post, params[:comment][:user_id], params[:comment][:body])
   @comment.save
 
   if params[:comment][:parent_id]
