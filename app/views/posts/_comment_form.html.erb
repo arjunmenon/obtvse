@@ -3,7 +3,22 @@
 	<% if local_assigns[:comment] %>
 		<%=f.hidden_field :parent_id, :value=> comment.id %>
 	<% end %>
-	<%=f.label :body, 'Commenting as Anonymous'%><br/>
+
+
+	<%- if current_user %>
+		<%=f.label :body, 'Commenting as '  + current_user.name %>
+	<%- else %>
+		<%=f.label :body, 'Commenting as Anonymous' %>
+		<div class="authentication">
+			<span><strong>Sign up with: </strong></span>
+			<%= link_to "Github", "/auth/github" %>
+			<%= link_to "Twitter", "/auth/twitter" %>
+		</div>
+	<%- end %>
+
+
+
+	<br/>
 	<%=f.text_area :body %><br/>
 	<%=f.submit "Add comment", :class => 'reply-submit' %>
 <% end %>
