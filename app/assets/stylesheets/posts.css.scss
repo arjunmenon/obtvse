@@ -587,13 +587,15 @@ form .permalink {
   }
 }
 
+.post-comments .actions { position:static;}
+.post-comments .authentication { float:right;}
 .post-comments label { color:#2c2c2c;}
 
 .post-comments textarea { 
   border:1px solid #ddd;
   max-width:960px;
   height:120px;
-  width:700px;
+  width:100%;
   background: #fff;
 }
 

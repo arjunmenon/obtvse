@@ -3,5 +3,5 @@ $(function() {
 });
 
 $(".reply-btn").click(function() {
-	$(this).parent().find('.form').toggle();
+	$(this).parent().parent().find('.form').toggle();
 });

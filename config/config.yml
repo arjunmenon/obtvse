@@ -3,9 +3,9 @@ title:               Coder On Code
 tagline:             "Node.js, Ruby, Magento"
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "admin" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "coder2012$" %>
-name:                Your name
+name:                Allan MacGregor
 twitter:             allanmacgregor
 github:              amacgregor
-linkedin:	     allanmacgregor
+linkedin:	         allanmacgregor
 email:               info@coderoncode.com
 google_analytics_id: UA-28450068-1

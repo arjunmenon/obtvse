@@ -21,3 +21,4 @@
 deploy.rb
 .DS_Store
 config.yml
+omniauth.rb
