@@ -1,6 +1,10 @@
 
 /* TODO: pull out coloring into variables */
+<<<<<<< HEAD
 $linkhover: #FF8C00;
+=======
+$linkhover: #2f2f2f;
+>>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 $maincolor: #2f2f2f;
 * { outline: 0 none;}
 
@@ -52,7 +56,11 @@ a:active {
 
 a:hover,
 #admin #published h3 a:hover {
+<<<<<<< HEAD
   color: $linkhover;
+=======
+  color: $maincolor;
+>>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 }
 
 header {
@@ -615,9 +623,12 @@ form .permalink {
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .blockquote {
   border-left-color: $linkhover !important;
 }
+=======
+>>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 
 
 nav.pagination {
