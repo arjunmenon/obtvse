@@ -1,6 +1,6 @@
 
 /* TODO: pull out coloring into variables */
-$linkhover: #2f2f2f;
+$linkhover: #FF8C00;
 $maincolor: #2f2f2f;
 * { outline: 0 none;}
 
@@ -52,7 +52,7 @@ a:active {
 
 a:hover,
 #admin #published h3 a:hover {
-  color: $maincolor;
+  color: $linkhover;
 }
 
 header {
@@ -615,6 +615,9 @@ form .permalink {
   margin-bottom: 15px;
 }
 
+.blockquote {
+  border-left-color: $linkhover !important;
+}
 
 
 nav.pagination {
