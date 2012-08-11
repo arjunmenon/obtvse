@@ -17,7 +17,8 @@
 /log/*.log
 /tmp
 
-
+config.yaml
+config/config.yaml
 deploy.rb
 .DS_Store
 omniauth.rb
