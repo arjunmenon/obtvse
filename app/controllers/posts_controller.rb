@@ -15,12 +15,13 @@ class PostsController < ApplicationController
 		end
 	end
 
-	def preview
-    @post = Post.new(params[:post])
-    @preview = true
-    respond_to do |format|
-      format.html { render 'show' }
-    end
+  def preview
+      @post = Post.new(params[:post])
+      @comments = @post.root_comments
+      @preview = true
+      respond_to do |format|
+          format.html { render 'show' }
+      end
   end
 
 	def admin
