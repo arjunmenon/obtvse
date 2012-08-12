@@ -1,10 +1,6 @@
 
 /* TODO: pull out coloring into variables */
-<<<<<<< HEAD
-$linkhover: #FF8C00;
-=======
 $linkhover: #2f2f2f;
->>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 $maincolor: #2f2f2f;
 * { outline: 0 none;}
 
@@ -56,11 +52,7 @@ a:active {
 
 a:hover,
 #admin #published h3 a:hover {
-<<<<<<< HEAD
-  color: $linkhover;
-=======
   color: $maincolor;
->>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 }
 
 header {
@@ -524,6 +516,7 @@ fieldset.markdown {
   width: 100%;
   position: relative;
   margin: 0;
+  display:none;
 }
 
 form .permalink {
@@ -540,9 +533,8 @@ form .permalink {
   }
 
   #post-editor {
-    margin-left: -25%;
-    left: 50%;
-    width: 50%;
+    margin:0 auto;
+    width: 960px;
   }
 }
 
@@ -557,15 +549,15 @@ form .permalink {
 
 .split-section {
   width: 50%;
-  position: fixed;
+  //position: fixed;
   left: 0;
   top: 0;
   padding: 0 20px 100px;
   height: 100%;
-  overflow: scroll;
+ /* overflow: scroll;
           box-sizing: border-box;
      -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;*/
 }
 
 #post-preview {
@@ -623,12 +615,9 @@ form .permalink {
   margin-bottom: 15px;
 }
 
-<<<<<<< HEAD
 .blockquote {
   border-left-color: $linkhover !important;
 }
-=======
->>>>>>> 7a2d313c398fb9bd613101915d544b29b0d2abd0
 
 
 nav.pagination {

@@ -19,6 +19,7 @@
     <fieldset class="markdown">
       <div id="text-content" class="expandingArea">
         <pre><span></span><br></pre>
+        <div id="content_editor"></div>
         <%= f.text_area :content, :placeholder => 'Write post here' %>
       </div>
     </fieldset>
@@ -42,6 +43,11 @@
           <li>
             <%= f.label :url, 'URL' %>
             <%= f.text_field :url, :placeholder => 'Optional external link' %>
+          </li>
+          <li>
+            <%= f.label :published_at, 'Publish at' %>
+            <%= f.date_select :published_at %>
+            <%= f.time_select :published_at, :ignore_date => true %>
           </li>
         </ul>
       </div>

@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20120701172427) do
     t.boolean  "draft",      :default => true
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+    t.datetime "published_at",                  :null => false
     t.boolean  "aside",      :default => false
     t.string   "url"
     t.integer  "parent"
