@@ -54,10 +54,14 @@ $(document).ready(function() {
     var winheight = $(window).height() - 220 + "px";
     $('#content_editor iframe').css("height",winheight);
     $('#content_editor iframe').contents().find('#epiceditor-editor-frame').css("height",winheight);
+    $('#content_editor iframe').contents().find('body').css("height",winheight);
+    $('#content_editor iframe').contents().find('#epiceditor-previewer-frame').css("height",winheight);
 });
 
 $(window).resize(function() {
     var winheight = $(window).height() - 220 + "px";
     $('#content_editor iframe').css("height",winheight);
     $('#content_editor iframe').contents().find('#epiceditor-editor-frame').css("height",winheight);
+    $('#content_editor iframe').contents().find('body').css("height",winheight);
+    $('#content_editor iframe').contents().find('#epiceditor-previewer-frame').css("height",winheight);
 });
