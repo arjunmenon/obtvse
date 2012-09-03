@@ -464,7 +464,7 @@ body.posts.new #admin {
   .expandingArea.active > textarea {
     /* Hide any scrollbars */
     overflow: hidden;
-    position: absolute;
+    position: inherit;
     top: 0;
     left: 0;
     height: 100%;
@@ -477,7 +477,7 @@ body.posts.new #admin {
   }
 
   .expandingArea.active > pre {
-    display: block;
+    display: none;
     /* Hide the text; just using it for sizing */
     visibility: hidden;
   }
