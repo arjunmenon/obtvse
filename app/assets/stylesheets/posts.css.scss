@@ -1,7 +1,7 @@
 
 /* TODO: pull out coloring into variables */
 $linkhover: #2f2f2f;
-$maincolor: #2f2f2f;
+$maincolor: #2c3e50;
 * { outline: 0 none;}
 
 
@@ -13,8 +13,8 @@ ul {list-style-type:none;}
 input, textarea {outline:none; background:none;}
 
 body {
-  background: #fff;
-  color: #222;
+  background: #34495e;
+  color: #ecf0f1;
 }
 
 body, textarea, pre, input {
@@ -38,17 +38,19 @@ h1,
 }
 
 p {
-  color: #555;
+  color: #ecf0f1;
 }
 
 a,
 a:visited
 a:active {
-  color: #2f2f2f;
+  color: #e74c3c;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e74c3c;
 
 }
+
+
 
 a:hover,
 #admin #published h3 a:hover {
@@ -57,7 +59,7 @@ a:hover,
 
 header {
   width: 162px;
-  border-right: 1px solid #2f2f2f;
+  border-right: 1px solid #2c3e50;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -65,7 +67,7 @@ header {
   background-color: $maincolor;
   a {
     padding: 2px 0;
-    color: #fff;
+    color: #ecf0f1;
     border-bottom: 0;
     text-decoration: none;
 
@@ -75,7 +77,7 @@ header {
       }
   }
   span {
-    color: #fff;
+    color: #ecf0f1;
     font-weight: 500;
 
     &.powered-by {
@@ -95,7 +97,7 @@ header {
 
     a {
       padding: 2px 0;
-      color: #fff;
+      color: #ecf0f1;
       border-bottom: 2px solid #eee;
 
       &:hover {
@@ -116,15 +118,28 @@ header {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 12px;
-    border-bottom: 5px solid #2f2f2f;
+    border-bottom: 5px solid #2c3e50;
   }
 }
 
 #content {
   section {
-    padding: 26px 40px 50px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px 0 15px 15px;
+    border-bottom: 5px solid #2c3e50;
+    float: left;
+    width: 100%;
     position: relative;
+    h1 {
+      background: #2c3e50;
+      padding-left: 5px;
+      margin-bottom: 2px;
+      margin-top: 1px;
+      a { 
+	color: #ecf0f1;
+	border-bottom: none;
+      }
+    }       
+    p { padding-left:10px; }
   }
 
   h1.external {
@@ -147,15 +162,16 @@ header {
 
 code {
   font-size: 13px;
-  background: #F2F2F2;
+  background: #2f2f2f;
   padding: 20px;
   margin: 20px;
   display: block;
 }
 
 .contain {
-  max-width: 960px;
-  position: relative;
+    max-width: 960px;
+    min-height: 200px;
+    position: relative;
 }
 
 .contain img {
@@ -168,7 +184,7 @@ code {
   bottom: 0;
   left: 0;
   background: #222;
-  color: #fff;
+  color: #ecf0f1;
   width: 100%;
   text-align: center;
   padding: 15px 0 15px;
@@ -188,8 +204,8 @@ code {
   }
 
   .menu.active {
-    background: #fff;
-    color: #000;
+    background: #ecf0f1;
+    color: #2c3e50;
   }
 
   .sub-menu {
@@ -218,11 +234,11 @@ code {
 #publish-bar a,
 .button {
   display: inline-block;
-  background: #000;
+  background: #2c3e50;
   padding: 8px 12px;
   font-weight: bold;
   border: none;
-  color: #fff;
+  color: #ecf0f1;
           border-radius: 5px;
      -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -241,7 +257,7 @@ code {
 .button:hover,
 .button.secondary:hover {
   background: $linkhover;
-  color: #fff;
+  color: #ecf0f1;
 }
 
 .button.space-top {
@@ -272,7 +288,7 @@ code {
 
 label {
   font-size: 16px;
-  color: #fff;
+  color: #ecf0f1;
   font-weight: bold;
   margin: 0 8px 0 0;
 }
@@ -325,7 +341,7 @@ body.posts.new #admin {
 
   #drafts {
     float: left;
-    border: 4px solid #000;
+    border: 4px solid #2c3e50;
     border-top: none;
     background: #fff;
     margin: 0 0 20px 0;
@@ -578,33 +594,34 @@ form .permalink {
   p { margin: 0 0 0 0; }
   form { margin-bottom: 15px;}
   .meta { font-size:12px; line-height:12px; margin: 0 0 0 0;}
-  .comment {border:1px solid #E6E6E6; border-radius: 5px; moz-border-radius:5px; padding: 10px; margin-bottom: 5px;}
+  .comment {border:1px solid #2c3e50; border-radius: 5px; moz-border-radius:5px; padding: 10px; margin-bottom: 5px;}
   .parent-comment {}
   .child-comment { 
-    background:#eee; margin-left:10px;
+    background:#2C3E50; margin-left:10px;
     .child-comment {
-      background:#fcfcfc;
+      background:#34495e;
     } 
   }
 }
 
 .post-comments .actions { position:static;}
 .post-comments .authentication { float:right;}
-.post-comments label { color:#2c2c2c;}
+.post-comments label { color:#2c3e50;}
 
 .post-comments textarea { 
-  border:1px solid #ddd;
+  border:1px solid #2c3e50;
   max-width:960px;
   height:120px;
   width:100%;
-  background: #fff;
+  color:#ecf0f1;
+  background: #2c3e50;
 }
 
 .post-comments .reply-submit {
-    background: none repeat scroll 0 0 #000000;
+    background: none repeat scroll 0 0 #2c3e50;
     border: medium none;
     border-radius: 5px 5px 5px 5px;
-    color: #FFFFFF;
+    color: #ecf0f1;
     display: inline-block;
     font-weight: bold;
     padding: 8px 12px;
@@ -630,6 +647,19 @@ nav.pagination {
   padding: 0;
 }
 
-  nav.pagination a {
-    margin-left: 10px;
-  }
+nav.pagination a {
+  margin-left: 10px;
+}
+
+.tile {
+    background-color: #ECF0F5;
+    border-radius: 6px 6px 6px 6px;
+    padding: 14px;
+    position: relative;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.excerpt .left { float:left; }
+.excerpt .right { float:left; width: 780px;}
